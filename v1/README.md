@@ -40,9 +40,9 @@ Step 1 : Create a S3 bucket in the eu-west-1
 ```shell
 #aws s3api create-bucket --bucket <my-bucket> --region eu-west-1
 ```
-```shell
-Output
 
+Output
+```shell
 {
     "Location": "http://my-bucket.s3.amazonaws.com/"
 }
