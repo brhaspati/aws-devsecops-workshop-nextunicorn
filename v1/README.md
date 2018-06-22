@@ -8,13 +8,13 @@ Go to the backend directory
 then run following command
 
 ```shell
-#npm install
+npm install
 ```
 This will create node_modules directory with the dependent library
 
 then run following command
 ```shell
-#sls deploy --verbose
+sls deploy --verbose
 ```
 Copy the end point of the API Gateway.
 
@@ -42,7 +42,7 @@ You are now in "fronend" directory
 
 Step 1 : Create a S3 bucket in the eu-west-1 
 ```shell
-#aws s3api create-bucket --bucket <my-bucket> --region eu-west-1
+aws s3api create-bucket --bucket <my-bucket> --region eu-west-1
 ```
 
 Output
@@ -55,7 +55,7 @@ Output
 Step 2: Copy the front end content to your website
 ```shell
 
-#aws s3 cp . s3://<my-bucket>/ --acl public-read --recursive
+aws s3 cp . s3://<my-bucket>/ --acl public-read --recursive
 
 ```
 
