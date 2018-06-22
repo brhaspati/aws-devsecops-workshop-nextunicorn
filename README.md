@@ -61,4 +61,13 @@ follow the instruction given in section "Creating AWS Access Keys" and "Setup wi
 
 ### 5. clone this repo
 
-#### 6. Follow the instructions in the readme of each directory.
+```shell
+git clone https://github.com/brhaspati/aws-devsecops-workshop-nextunicorn.git
+```
+
+### 6. Follow the instructions in the readme of each directory.
+
+```shell
+cd v1
+vim Readme.md
+```
