@@ -65,25 +65,29 @@ Step 3: enable static web hosting option.
 aws s3 website s3://<my-bucket>/ --index-document index.html --error-document error.html
 ```
 
-# change and deploy
+# Deploying changes
 
-## Any changes to Frontend
+## Frontend
+
 ```shell
+cd frontend
 
 aws s3 cp . s3://<my-bucket>/ --acl public-read --recursive
 
 ```
 
-## Any change to Backend
+## Backend
 
-Go to the backend directory
+
 
 then run following command
 
 ```shell
+cd backend
+
 npm install
 ```
-This will create node_modules directory with the dependent library
+This will create node_modules directory with the dependent libraries
 
 then run following command
 ```shell
