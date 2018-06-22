@@ -1,0 +1,3 @@
+v1/backend/.serverless/*
+v1/backend/npm_modules
+v1/backend/npm_modules/*
