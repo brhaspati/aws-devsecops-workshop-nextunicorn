@@ -1,13 +1,29 @@
-# aws-devsecops-workshop-nextunicorn
-This repository contains code for hands on excercises to setup a internet facing web application and how to secure it using AWS native services.
-The webapp is built using HTML5 and Javascript and the backend is nodeJS runtime. No prior knowledge of HTML5 or Javascript needed. 
-However, familiarity will help to quickly finish these excercises.
+# Goal
+The objective is to build, operate and secure an internet facing application hosted in AWS by adopting devsecops principles and practises.
 
-Following AWS services will be use and participants are expected to have a basic knowledge on the these services and its working. 
+# About Next Unicorn
+
+Next Unicorn is a the hotest start up in London. As the name suggests, they are working next big thing that is going to change our world. They are looking for practioners who can build a scalable, secure app on AWS.
+
+You are those selected few who are going to make it happen.
+
+# aws-devsecops-workshop-nextunicorn
+
+Each release of the product goes into v1, v2 ... directories
+
+This repository contains all product versions the product team is developing.
+
+As a "DevSecOps Ninja" Your task is to setup their product in your AWS account and help them improve their security posture. 
+
+The application is built using HTML5 and Javascript and the backend is nodeJS runtime. No prior knowledge of HTML5 or Javascript needed. However, familiarity will help to quickly setup their environment in your AWS account..
+
+Following AWS services will be used and participants are expected to have a basic knowledge on the these services and its working. 
 1. AWS Lambda
 2. API Gateway
 3. S3
 4. Cloudfront
+5. CloudWatch
+
 
 
 ## Pre-requiste:
