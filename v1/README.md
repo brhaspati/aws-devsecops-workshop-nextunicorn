@@ -38,7 +38,7 @@ var subscribeURL = "https://X12323232323.execute-api.eu-west-1.amazonaws.com/dev
 ```  
 ## Create a S3 bucket 
 
-You are now in "fronend" directory
+You are now in "frontend" directory
 
 Step 1 : Create a S3 bucket in the eu-west-1 
 ```shell
@@ -64,3 +64,29 @@ Step 3: enable static web hosting option.
 ```shell
 aws s3 website s3://<my-bucket>/ --index-document index.html --error-document error.html
 ```
+
+# change and deploy
+
+## Any changes to Frontend
+```shell
+
+aws s3 cp . s3://<my-bucket>/ --acl public-read --recursive
+
+```
+
+## Any change to Backend
+
+Go to the backend directory
+
+then run following command
+
+```shell
+npm install
+```
+This will create node_modules directory with the dependent library
+
+then run following command
+```shell
+sls deploy --verbose
+```
+
