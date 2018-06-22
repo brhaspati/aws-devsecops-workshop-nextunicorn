@@ -94,3 +94,22 @@ then run following command
 sls deploy --verbose
 ```
 
+#Test you app
+
+In your browse, type the URL
+
+ http://<my-bucket>.s3-website-eu-west-1.amazonaws.com
+ 
+ Enter an email address in text box and click subscribe. 
+ 
+ Go to the AWS Console, select DynamoDB
+ Go to the table "NextUnicornMailingListTable"
+ 
+ You will find the email address. 
+ 
+ Voila. Next Unicorn is in the business.
+ 
+ But is it safe?
+ 
+ 
+
