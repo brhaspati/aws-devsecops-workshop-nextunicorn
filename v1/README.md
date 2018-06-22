@@ -25,13 +25,17 @@ using your favorite editor, open
 src/functions.js
 
 find the variable "subscribeURL" 
+
+```javascript
 var subscribeURL = "https://<YOUR API GATEWAY endpoint>/subscribe"
+```
 
 replace, it with your API gateway endpoint
 for example, 
 
+```javascript
 var subscribeURL = "https://X12323232323.execute-api.eu-west-1.amazonaws.com/dev/subscribe";
-  
+```  
 ## Create a S3 bucket 
 
 You are now in "fronend" directory
