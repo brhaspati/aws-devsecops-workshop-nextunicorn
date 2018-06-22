@@ -7,11 +7,11 @@ Next Unicorn is a the hotest start up in London. As the name suggests, they are 
 
 You are those selected few who are going to make it happen.
 
-# aws-devsecops-workshop-nextunicorn
+# About their product stack
 
 Each release of the product goes into v1, v2 ... directories
 
-This repository contains all product versions the product team is developing.
+This repository contains all product versions the team has developed or currently developing.
 
 As a "DevSecOps Ninja" Your task is to setup their product in your AWS account and help them improve their security posture. 
 
