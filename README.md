@@ -1,6 +1,5 @@
 # Table of Contents
 **[Goal](#Goal)**<br>
-**[About Next Unicorn](#about-next-unicorn)**<br>
 **[Setup](#setup)**<br>
 
 
