@@ -1,21 +1,28 @@
+# Table of Contents
+**[Goal](#Goal)**<br>
+**[About Next Unicorn](#about-next-unicorn)**<br>
+**[Setup](#setup)**<br>
+
+
+
 # Goal
 The objective is to build, operate and secure an internet facing application hosted in AWS by adopting devsecops principles and practises.
 
-# About Next Unicorn
+**About Next Unicorn**
 
 Next Unicorn is a the hotest start up in London. As the name suggests, they are working next big thing that is going to change our world. They are looking for practioners who can build a scalable, secure app on AWS.
 
 You are those selected few who are going to make it happen.
 
-# Their product stack
+**Their product stack**
 
 Next Unicorn follow devops best practise and use Infrastructure as a code for most of their development. 
 
-## v1 directory contains their application stack
+**v1 directory contains their application stack**
 The application is built using HTML5 and Javascript and the backend is nodeJS runtime. No prior knowledge of HTML5 or Javascript needed. However, familiarity will help to quickly setup their environment in your AWS account..
 
 
-## v2 directory contains their infrastructure stack
+**v2 directory contains their infrastructure stack**
 It is a basic VPC with bastion host, Linux and Windows servers. The Devops team suspect one of their servers may be compromised and could be used to attack their other servers in the network. 
 
 As a "DevSecOps Ninja" Your task is to setup their stacks in your AWS account and help them to
@@ -31,8 +38,8 @@ Following AWS services will be used and participants are expected to have a basi
 5. CloudWatch
 
 
-
-## Pre-requiste:
+# Setup
+**Pre-requiste**
 
 AWS lamda supports certain versions of NodeJS runtime. We will be using 6.10 in this workshop
 https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html
