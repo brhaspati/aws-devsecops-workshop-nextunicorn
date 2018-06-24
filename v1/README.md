@@ -94,16 +94,18 @@ then run following command
 sls deploy --verbose
 ```
 
-#Test you app
+# Test you app
 
 In your browse, type the URL
 
+```html
  http://<my-bucket>.s3-website-eu-west-1.amazonaws.com
+```
  
- Enter an email address in text box and click subscribe. 
+ Enter an `email address` in text box and click subscribe. 
  
- Go to the AWS Console, select DynamoDB
- Go to the table "NextUnicornMailingListTable"
+ Go to the AWS Console, select `DynamoDB`<br>
+ Go to the table `NextUnicornMailingListTable`<br>
  
  You will find the email address. 
  
@@ -111,5 +113,9 @@ In your browse, type the URL
  
  But is it safe?
  
+ # Day 2
  
+ Improve the security of the application by using AWS services and best practises. 
+ 
+ Follow the instruction given in the `README.md` of `security` directory.
 
