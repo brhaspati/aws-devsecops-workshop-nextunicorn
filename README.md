@@ -13,32 +13,32 @@ The objective is to build, operate and secure an internet facing application hos
 
 Next Unicorn is the hotest start-up in London. As the name suggests, they are working next big thing that is going to change our world. They are looking for practioners who can build a scalable, secure app on AWS.
 
-You are those selected few who are going to make it happen.
+You are those selected few who are going to make it happen.<br>
 
 **Their product stack**
 
-Next Unicorn follow devops best practise and use Infrastructure as a code for most of their development. 
+Next Unicorn follow devops best practise and use Infrastructure as a code for most of their development. <br><br>
 
 **v1 directory contains their application stack**
 
-The application is built using HTML5 and Javascript and the backend is nodeJS runtime. No prior knowledge of HTML5 or Javascript needed. However, familiarity will help to quickly setup their environment in your AWS account..
+The application is built using HTML5 and Javascript and the backend is nodeJS runtime. No prior knowledge of HTML5 or Javascript needed. However, familiarity will help to quickly setup their environment in your AWS account..<br><br>
 
 
 **v2 directory contains their infrastructure stack**
 
-It is a basic VPC with bastion host, Linux and Windows servers. The Devops team suspect one of their servers may be compromised and could be used to attack their other servers in the network. 
+It is a basic VPC with bastion host, Linux and Windows servers. The Devops team suspect one of their servers may be compromised and could be used to attack their other servers in the network. <br><br>
 
 As a "DevSecOps Ninja" Your task is to setup their stacks in your AWS account and help them to
 - detect security incidents
 - remediate security incidents
-- improve their security posture using recommended best practises.
+- improve their security posture using recommended best practises.<br><br>
 
 Following AWS services will be used and participants are expected to have a basic knowledge on the these services and its working. 
 1. AWS Lambda
 2. API Gateway
 3. S3
 4. Cloudfront
-5. CloudWatch
+5. CloudWatch<br><br>
 
 
 # Setup
