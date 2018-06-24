@@ -78,6 +78,6 @@ This module is inspired by following git hub projects. It has been adapted to si
 
 # Disclaimer
 The repo and the modules have been setup to explain the concepts and give hands-on demo in a workshop. 
-It has been optimised for ease of use and to learn how to use various tools. It is for demo and educational purpose only. 
+It has been optimised for ease of use and to teach how to use various tools. It is for demo and educational purpose only. 
 There is no explicit or implicit warranty that code is production ready or support will be provided. 
 
