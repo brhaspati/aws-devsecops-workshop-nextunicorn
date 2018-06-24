@@ -2,14 +2,19 @@
 
 The goal of this module is to demonstrate DevSecOps roles by using various AWS services to improve the security posture with minimum changes to the application code.
 
-## Pre-requisites 
+# honeyLambda
+The objective is to identify bots and screenscrappers and block them from accessing your wesbites. In general, websites introduce a tracking pixel or hidden field know an honeytrap. A normal or legitimate user will not click it wherase a webcrawler or bot uses it. 
+
+When a bot is crawling the website, this API notifies details in the slack channel. The devsecops team will update their black listed IP address range to blacklisted the bot's IP address. 
+
+
+## Setup honeyLambda
+
+### Pre-requisites 
 
 * Python 2.7
 * serverless  1.27.3
 * aws cli 1.15
-
-
-## Setup
 
 ### create a config bucket to store the configurations
 
