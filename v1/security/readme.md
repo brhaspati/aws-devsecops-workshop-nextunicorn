@@ -123,12 +123,13 @@ You will see following:
 # Credits
 This module is inspired by following git hub projects. It has been adapted to simplify setup and demo for audiences (who we assume do not have any prior knowledge of the topic or setup) in the workshop. 
 
-* [honeyLambda] (https://github.com/0x4D31/honeyLambda)
-* [AWS WAF OWASP 10] (https://github.com/aws-samples/aws-waf-sample/tree/master/waf-owasp-top-10)
+* [honeyLambda](https://github.com/0x4D31/honeyLambda)
+* [AWS WAF OWASP 10](https://github.com/aws-samples/aws-waf-sample/tree/master/waf-owasp-top-10)
 
 
 # Disclaimer
-The workshop has been put together for the ease of use and to learn how to use various tools. It is for demo and educational purpose only. There is no explicit or implicit warranty that these code is production ready or support will be provided. 
+This repo and its modules have been designed to explain the concepts and give hands-on demo in a 2 hours devsecops workshop. 
+Hence it has been optimised for ease of use and to learn how to use various AWS services and toolset. It is for demo and educational purpose only. There is no explicit or implicit warranty that code is production ready or support will be provided. 
 
 
 
