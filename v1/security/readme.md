@@ -52,7 +52,11 @@ aws s3 cp notifications-config.json s3://configbucket/
 
 ## Deploy
 
+
+
 ```shell
+cd honeyLambda
+npm install
 sls deploy --verbose
 ```
 
