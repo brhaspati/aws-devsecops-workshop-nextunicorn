@@ -106,6 +106,12 @@ When the cloudformation script successfully completes, go to the `WAF & Shield` 
 
 You will see following:
 
+<img width="1424" alt="screen shot 2018-06-24 at 12 30 31" src="https://user-images.githubusercontent.com/12085596/41818635-c76f4644-77aa-11e8-86f9-99a0d6e199e0.png">
+
+<img width="1415" alt="screen shot 2018-06-24 at 12 32 21" src="https://user-images.githubusercontent.com/12085596/41818637-cbccec64-77aa-11e8-8549-633273eca502.png">
+
+<img width="1436" alt="screen shot 2018-06-24 at 12 32 40" src="https://user-images.githubusercontent.com/12085596/41818639-ceeb2bd6-77aa-11e8-9c87-04255633e8dc.png">
+
 
 
 
