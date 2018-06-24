@@ -13,7 +13,7 @@ The objective is to build, operate and secure an internet facing application hos
 
 Next Unicorn is the hotest start-up in London. As the name suggests, they are working next big thing that is going to change our world. They are looking for practioners who can build a scalable, secure app on AWS.
 
-You are those selected few who are going to make it happen.<br>
+You are those selected few who are going to make it happen.<br><br>
 
 **Their product stack**
 
