@@ -16,13 +16,16 @@ Next Unicorn is the hotest start-up in London. As the name suggests, they are wo
 You are those selected few who are going to make it happen.
 
 **Their product stack**
+
 Next Unicorn follow devops best practise and use Infrastructure as a code for most of their development. 
 
 **v1 directory contains their application stack**
+
 The application is built using HTML5 and Javascript and the backend is nodeJS runtime. No prior knowledge of HTML5 or Javascript needed. However, familiarity will help to quickly setup their environment in your AWS account..
 
 
 **v2 directory contains their infrastructure stack**
+
 It is a basic VPC with bastion host, Linux and Windows servers. The Devops team suspect one of their servers may be compromised and could be used to attack their other servers in the network. 
 
 As a "DevSecOps Ninja" Your task is to setup their stacks in your AWS account and help them to
@@ -39,7 +42,8 @@ Following AWS services will be used and participants are expected to have a basi
 
 
 # Setup
-##Pre-requisite
+
+## Pre-requisite
 
 AWS lamda supports certain versions of NodeJS runtime. We will be using 6.10 in this workshop
 https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html
