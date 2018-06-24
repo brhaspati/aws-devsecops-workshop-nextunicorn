@@ -1,4 +1,5 @@
-var subscribeURL = "https://w2kzzluwp4.execute-api.eu-west-1.amazonaws.com/dev/subscribe";
+var subscribeURL = "https://d67ryh9knh.execute-api.eu-west-1.amazonaws.com/dev/subscribe"
+
 
 function submit(){
 

@@ -3,5 +3,6 @@ v1/.DS_Store
 v1/frontend/.DS_Store
 v1/backend/.serverless/*
 v1/backend/.DS_Store
-v1/backend/npm_modules
-v1/backend/npm_modules/*
+v1/backend/node_modules
+v1/backend/node_modules/*
+v1/devsecops/honeyLambda/.serveless/*

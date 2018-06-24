@@ -12,6 +12,5 @@
     "aws-sdk": "^2.10.0",
     "unirest": "^0.5.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

@@ -1,15 +1,3 @@
-# Welcome to Serverless!
-#
-# This file is the main config file for your service.
-# It's very minimal at this point and uses default values.
-# You can always add more config options for more control.
-# We've included some commented out config examples here.
-# Just uncomment any of them to get that config option.
-#
-# For full config options, check the docs:
-#    docs.serverless.com
-#
-# Happy Coding!
 custom:
   writeEnvVars: ${file(./.env.yml)}
 service: ${self:custom.writeEnvVars.SERVICE_NAME}
@@ -21,9 +9,8 @@ provider:
   region: ${self:custom.writeEnvVars.REGION}
   memorySize: 128 # optional, default is 1024
   timeout: 10 # optional, default is 6
-
-
-# you can add statements to the Lambda function's IAM Role here
+  deploymentBucket: ${self:custom.writeEnvVars.DEPLOYMENT_BUCKET}
+  # you can add statements to the Lambda function's IAM Role here
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -53,8 +40,6 @@ functions:
           path: subscribe
           method: post
           cors: true
-
-  
 
 resources:
   Resources:
