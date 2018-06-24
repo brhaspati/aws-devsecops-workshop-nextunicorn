@@ -2,7 +2,7 @@
 
 The goal of this module is to demonstrate DevSecOps roles by using various AWS services to improve the security posture with minimum changes to the application code.
 
-# honeyLambda
+# Detect threat using honeyLambda
 The objective is to identify bots and screenscrappers and block them from accessing your wesbites. In general, websites introduce a tracking pixel or hidden field know an honeytrap. A normal or legitimate user will not click it wherase a webcrawler or bot uses it. 
 
 When a bot is crawling the website, this API notifies details in the slack channel. The devsecops team will update their black listed IP address range to blacklisted the bot's IP address. 
@@ -94,6 +94,19 @@ If you have successfully setup everything then you see following message and an 
  
  * Check whether you have correct notifications-config.json in the config bucket. 
  * Check whether you have created the config bucket specified in `.env.yml`
+
+# Protect threat using OWASP top 10 rules in AWS WAF
+
+Go to the `CloudFormation` service in eu-west-1 region. 
+
+Click `Create stack` and upload the OWASP10_base.yml file to click next steps to create the WebACL. 
+
+## Verification
+When the cloudformation script successfully completes, go to the `WAF & Shield` services
+
+You will see following:
+
+
 
 
 
