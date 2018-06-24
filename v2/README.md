@@ -11,7 +11,6 @@ Go to the console and enable Guardduty. It is free for 30 days. you can suspend 
 ## run the cloudformation
 Run the cloudformation template to the infrasture and integrate it with the slack.
 
-
 ### slack configuration
 You will add your incoming web hook as the first parameter in the template
 Add the slack channel as a parameter - example, #devsecops or #general
