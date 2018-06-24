@@ -74,8 +74,20 @@ ServerlessDeploymentBucketName: nextunicorn-deploy
 
 ### Testing
 
+#### Setup successful
 
+If you have successfully setup everything then you see following message and an immediate slack notification.
 
+<img width="1430" alt="screen shot 2018-06-24 at 12 04 29" src="https://user-images.githubusercontent.com/12085596/41818468-9cf7928e-77a7-11e8-98bb-d0828b99a112.png">
+
+#### Setup not successful
+
+ Will get `internal server error`
+ 
+ * Check whether you have correct notifications-config.json in the config bucket. 
+ * Check whether you have created the config bucket specified in `.env.yml`
+ 
+ 
 
 
 
