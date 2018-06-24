@@ -5,12 +5,16 @@
 
 ## run the cloudformation
 
-## login to
+## login to hosts
+
+## run attack script
+
+## check the logs in Guardduty
 
 
 
 # Credits
-This module is inspired by following git hub projects. It has been adapted to simplify setup and demo for audiences (who we assume do not have any prior knowledge of the topic or setup) in the workshop. 
+This module is inspired by following git hub projects. It has been adapted to simplify setup and demo for audiences (who we assume may not have any prior knowledge on some of the topics or this setup) in the workshop. 
 
 * [amazon-guardduty-tester](https://github.com/awslabs/amazon-guardduty-tester)
 * [amazon-guardduty-to-slack](https://github.com/aws-samples/amazon-guardduty-to-slack)
