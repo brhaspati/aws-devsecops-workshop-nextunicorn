@@ -26,25 +26,20 @@ Output
 }
 ```
 
-## Step 2: Enable Static web hosting
 
-```shell
-aws s3 website s3://mywebsite/ --index-document index.html --error-document index.html
-````
-
-## Step 3: Create deployment bucket
+## Step 2: Create deployment bucket
 
 ```shell
 aws s3api create-bucket --bucket mywebsite-deploy --region eu-west-1
 ```
 
-## Step 4: Create config bucket
+## Step 3: Create config bucket
 
 ```shell
 aws s3api create-bucket --bucket mywebsite-config --region eu-west-1
 ```
 
-## Step 5: Create log bucket
+## Step 4: Create log bucket
 
 ```shell
 aws s3api create-bucket --bucket mywebsite-log --region eu-west-1
@@ -94,11 +89,13 @@ var subscribeURL = "https://X12323232323.execute-api.eu-west-1.amazonaws.com/dev
 ```  
 ## host the web site in the S3
 
+
+### Step 1: Enable server access logs
 Go to Console -> select S3 -> choose your website bucket -> click the `server access logs` 
 
 <img width="1372" alt="screen shot 2018-06-25 at 19 46 12" src="https://user-images.githubusercontent.com/12085596/41869305-7c384fa2-78b0-11e8-83fd-8138122899bd.png">
 
-
+### Step 2: Copy the web content to S3
 Go to frontent directory in your command line and copy the frontend content to S3 bucket of your website
 
 ```shell
@@ -106,6 +103,13 @@ cd frontend
 aws s3 cp . s3://mywebsite/ --acl public-read --recursive
 
 ```
+
+### Step 3: Enable Static web hosting
+
+```shell
+aws s3 website s3://mywebsite/ --index-document index.html --error-document index.html
+````
+
 
 # Deploying any furher changes
 
@@ -141,7 +145,7 @@ sls deploy --verbose
 In your browse, type the URL
 
 ```html
- http://<my-bucket>.s3-website-eu-west-1.amazonaws.com
+ http://mywebsite.s3-website-eu-west-1.amazonaws.com
 ```
  
  Enter an `email address` in text box and click subscribe. 
@@ -155,7 +159,7 @@ In your browse, type the URL
  
  But is it safe?
  
- # Day 2
+ # Next step - Enable Security
  
  Improve the security of the application by using AWS services and best practises. 
  
