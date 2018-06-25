@@ -8,7 +8,6 @@ Purpose | Description
 ------------ | -------------
 WEBSITE HOSTING BUCKET | Choose a unique name for your bucket where you would like to host the website
 DEPLOYMENT BUCKET | All the lambda deployment will be stored here
-CONFIGURATION BUCKET | Configuration files goes here
 LOG BUCKET | S3 and Cloudfront access logs goes here.
 
 
@@ -33,13 +32,8 @@ Output
 aws s3api create-bucket --bucket mywebsite-deploy --region eu-west-1
 ```
 
-## Step 3: Create config bucket
 
-```shell
-aws s3api create-bucket --bucket mywebsite-config --region eu-west-1
-```
-
-## Step 4: Create log bucket
+## Step 3: Create log bucket
 
 ```shell
 aws s3api create-bucket --bucket mywebsite-log --region eu-west-1
