@@ -1,9 +1,65 @@
 
 # Initial Setup
 
+## Create buckets
+We need 4 buckets for this demo
+
+Purpose | Description
+------------ | -------------
+WEBSITE HOSTING BUCKET | Choose a unique name for your bucket where you would like to host the website
+DEPLOYMENT BUCKET | All the lambda deployment will be stored here
+CONFIGURATION BUCKET | Configuration files goes here
+LOG BUCKET | S3 and Cloudfront access logs goes here.
+
+
+## Step 1 : Create a S3 bucket in the eu-west-1 
+Please choose a unique bucket name for your website. 
+
+```shell
+aws s3api create-bucket --bucket mywebsitebucket --region eu-west-1
+```
+
+Output
+```shell
+{
+    "Location": "http://mywebsitebucket .s3.amazonaws.com/"
+}
+```
+
+## Step 2: Enable Static web hosting
+
+```shell
+aws s3 website s3://mywebsite/ --index-document index.html --error-document index.html
+````
+
+## Step 3: Create deployment bucket
+
+```shell
+aws s3api create-bucket --bucket mywebsite-deploy --region eu-west-1
+```
+
+## Step 4: Create config bucket
+
+```shell
+aws s3api create-bucket --bucket mywebsite-config --region eu-west-1
+```
+
+## Step 5: Create log bucket
+
+```shell
+aws s3api create-bucket --bucket mywebsite-log --region eu-west-1
+```
+
+
 ## Backend
 
 Go to the backend directory
+
+open the `.env.yml` file update the `DEPLOYMENT_BUCKET`
+
+```shell
+DEPLOYMENT_BUCKET: mywebsite-deploy
+```
 
 then run following command
 
@@ -36,36 +92,22 @@ for example,
 ```javascript
 var subscribeURL = "https://X12323232323.execute-api.eu-west-1.amazonaws.com/dev/subscribe";
 ```  
-## Create a S3 bucket 
+## host the web site in the S3
 
-You are now in "frontend" directory
+Go to Console -> select S3 -> choose your website bucket -> click the `server access logs` 
 
-Step 1 : Create a S3 bucket in the eu-west-1 
+<img width="1372" alt="screen shot 2018-06-25 at 19 46 12" src="https://user-images.githubusercontent.com/12085596/41869305-7c384fa2-78b0-11e8-83fd-8138122899bd.png">
+
+
+Go to frontent directory in your command line and copy the frontend content to S3 bucket of your website
+
 ```shell
-aws s3api create-bucket --bucket <my-bucket> --region eu-west-1
-```
-
-Output
-```shell
-{
-    "Location": "http://my-bucket.s3.amazonaws.com/"
-}
-```
-
-Step 2: Copy the front end content to your website
-```shell
-
-aws s3 cp . s3://<my-bucket>/ --acl public-read --recursive
+cd frontend
+aws s3 cp . s3://mywebsite/ --acl public-read --recursive
 
 ```
 
-Step 3: enable static web hosting option. 
-
-```shell
-aws s3 website s3://<my-bucket>/ --index-document index.html --error-document error.html
-```
-
-# Deploying changes
+# Deploying any furher changes
 
 ## Frontend
 
