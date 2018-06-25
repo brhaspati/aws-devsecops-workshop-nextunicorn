@@ -18,8 +18,13 @@ When a bot is crawling the website, this API notifies details in the slack chann
 
 ### create a config bucket to store the configurations
 
+Purpose | Description
+------------ | -------------
+CONFIG_BUCKET | store the honey lambda notification related configuration
+
+
 ```sh
-aws s3 mb s3://configbucket --region eu-west-1
+aws s3api create-bucket --bucket mywebsite-config --region eu-west-1
 ```
 
 ### Slack
@@ -44,7 +49,7 @@ Copy the `notifications-config.json` to your s3 configuration bucket.
 
 ```sh
 
-aws s3 cp notifications-config.json s3://configbucket/
+aws s3 cp notifications-config.json s3://mywebsite-config/
 
 ```
 
